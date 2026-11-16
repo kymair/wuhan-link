@@ -77,3 +77,13 @@ footer { border-top: 2px solid; padding-block: 18px; font-size: .82rem; }
 @media (max-width: 900px) {
   .join { align-items: flex-start; flex-direction: column; }
 }
+.album-link { margin-inline-start: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.album { padding-block: 48px 10px; }
+.album > p { margin: 10px 0 24px; }
+.album details { border-top: 1px solid #a8ada2; }
+.album details:last-child { border-bottom: 1px solid #a8ada2; }
+.album summary { cursor: pointer; padding: 14px 4px; font-size: 1.15rem; font-weight: 700; }
+.album summary span { float: right; font-size: .85rem; font-weight: 500; }
+.prints { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,220px),1fr)); gap: 12px; padding: 0 0 20px; }
+.prints img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+@media(max-width:600px){ .prints { grid-template-columns: repeat(2,minmax(0,1fr)); } }
